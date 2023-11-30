@@ -17,7 +17,7 @@ Functionally, this code will 1) accept a set of conditions in which it 2) pulls 
 
 ## Basic Operation
 To use the code, locate all included files within the same directory and ensure that you have installed all dependencies:
-Pandas, numpy, matplotlib, seaborn, plotly, pyomo  
+Pandas, numpy, matplotlib, seaborn, plotly, pyomo, branca, geopandas
   
 If the use is for unsubsidized deployment, V10_GL.py is the better code to run as it is more stable. If subsidies are the aim, V12_GL.py is required.
 

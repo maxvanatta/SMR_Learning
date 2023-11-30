@@ -23,35 +23,35 @@ If the use is for unsubsidized deployment, V10_GL.py is the better code to run a
 
 ### Inputs
 Run the V10, V12 files with the following required command line arguments:  
-  '--Rand_n', type=int, Number of random facilities to sample (randomization is consistent between runs, ie, facility 1 will always have the same id)  
-  '--YearStart', type=int, Starting Year of analysis  
-  '--YearCount', type=int, Number of years to include in the discrete optimization   
-  '--HrCount', type=int, Number of hours per year  
-  '--NGP', type = str, Natural Gas Price ($/MMBtu)  
-  '--RollStep', type=int, Rolling horizon step size in years  
-  '--RollCount', type=int, Rolling horizon count  
-  '--Max_Builds', type=str, Minimum build requirements formatted as a string  
-  '--ITC', type=float, Investment tax credit percentage (0-1)  
-  '--FolderName', type=str, Makes the filename and directory  
-  '--IR', type=float, Interest Rate  
-  '--Lifetime', type=int, SMR book lifetime in years  
-  '--ITC_Duration', type=int, Years of ITC operation
-  '--Min_Builds', type=str, Minimum build requirements (just use 0,0,0,0) 
+  **--Rand_n** _int_, Number of random facilities to sample (randomization is consistent between runs, ie, facility 1 will always have the same id)  
+  **--YearStart** _int_, Starting Year of analysis  
+  **--YearCount** _int_, Number of years to include in the discrete optimization   
+  **--HrCount** _int_, Number of hours per year  
+  **--NGP** _str_, Natural Gas Price ($/MMBtu)  
+  **--RollStep** _int_, Rolling horizon step size in years  
+  **--RollCount** _int_, Rolling horizon count  
+  **--Max_Builds** _str_, Minimum build requirements formatted as a string  
+  **--ITC** _float_, Investment tax credit percentage (0-1)  
+  **--FolderName** _str_, Makes the filename and directory  
+  **--IR** _float_, Interest Rate  
+  **--Lifetime** _int_, SMR book lifetime in years  
+  **--ITC_Duration** _int_, Years of ITC operation  
+  **--Min_Builds** _str_, Minimum build requirements (just use 0,0,0,0) 
 
 And the optional arguements: 
-  '--NGP_Variable', type=str, Is natural gas price changing  
-  '--NGP_V', type=str, Natural gas prices over the years  
-  '--Max_Increase', type=float, Percent of module maximum growth per year  
-  '--LearningRate', type=str, Learning Rate Scenario  
-  '--Gen_File', type=str, Name of generator parameter file, default = 'LC_base_4pack.csv'  
-  '--Init_N', type=str, Number of SMR modules previously built  
-  '--CarbonTax', type=float, Carbon Tax in dollars per ton CO2  
-  '--FacilityFile', type=str, File for the facilities', default = '2015_NG_National.csv'  
-  (V12 only) '--Subsidy', type=float, Per SMR type subsidy quantity which will be distributed out to each until consumed, default = 0  
-  '--CC', type=float, Capital Cost Modifier for sensitivites, default = 1  
+  **--NGP_Variable** _str_, Is natural gas price changing  
+  **--NGP_V** _str_, Natural gas prices over the years  
+  **--Max_Increase** _float_, Percent of module maximum growth per year  
+  **--LearningRate** _str_, Learning Rate Scenario  
+  **--Gen_File** _str_, Name of generator parameter file, default = 'LC_base_4pack.csv'  
+  **--Init_N** _str_, Number of SMR modules previously built  
+  **--CarbonTax** _float_, Carbon Tax in dollars per ton CO2  
+  **--FacilityFile** _str_, File for the facilities', default = '2015_NG_National.csv'  
+  (V12 only) **--Subsidy** _float_, Per SMR type subsidy quantity which will be distributed out to each until consumed, default = 0  
+  **--CC** _float_, Capital Cost Modifier for sensitivites, default = 1  
 
-Example:
-  python ./V10_GL.py --Rand_n 925 --YearStart 2030 --YearCount 40 --HrCount 1 --NGP 10 --RollStep 20 --RollCount 20 --Min_Builds 0,0,0,0 --ITC 0.0 --ITC_Duration 3 --FolderName Git_example_10 --IR 0.07 --Lifetime 30 --Max_Increase 0.20 --Max_Builds 2,8,2,1
+Example:  
+  `python ./V10_GL.py --Rand_n 925 --YearStart 2030 --YearCount 40 --HrCount 1 --NGP 10 --RollStep 20 --RollCount 20 --Min_Builds 0,0,0,0 --ITC 0.0 --ITC_Duration 3 --FolderName Git_example_10 --IR 0.07 --Lifetime 30 --Max_Increase 0.20 --Max_Builds 2,8,2,1`
 
 ### Outputs
 The output of this code will be:  

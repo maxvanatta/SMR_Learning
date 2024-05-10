@@ -19,8 +19,8 @@ Functionally, this code will 1) accept a set of conditions in which it 2) pulls 
 To use the code, locate all included files within the same directory and ensure that you have installed all dependencies:
 Pandas, numpy, matplotlib, seaborn, plotly, pyomo, branca, geopandas
   
-If the use is for unsubsidized deployment, V10_GL.py is the better code to run as it is more stable. If subsidies are the aim, V12_GL.py is required.
-
+If the use is for unsubsidized deployment, V10_GL_0403c.py is the better code to run as it is more stable. If subsidies are the aim, V12_GL.py is required.
+ALL OTHER VERSIONS ARE TROBLESHOOTING (I apologize for the mess there)
 ### Inputs
 Run the V10, V12 files with the following required command line arguments:  
   **--Rand_n** _int_, Number of random facilities to sample (randomization is consistent between runs, ie, facility 1 will always have the same id)  
@@ -51,7 +51,7 @@ And the optional arguements:
   **--CC** _float_, Capital Cost Modifier for sensitivites, default = 1  
 
 Example:  
-  `python ./V10_GL.py --Rand_n 925 --YearStart 2030 --YearCount 40 --HrCount 1 --NGP 10 --RollStep 20 --RollCount 20 --Min_Builds 0,0,0,0 --ITC 0.0 --ITC_Duration 3 --FolderName Git_example_10 --IR 0.07 --Lifetime 30 --Max_Increase 0.20 --Max_Builds 2,8,2,1`
+  `python ./V10_GL_0403c.py --Rand_n 925 --YearStart 2030 --YearCount 40 --HrCount 1 --NGP 10 --RollStep 20 --RollCount 20 --Min_Builds 0,0,0,0 --ITC 0.0 --ITC_Duration 3 --FolderName Git_example_10 --IR 0.07 --Lifetime 30 --Max_Increase 0.20 --Max_Builds 2,8,2,1`
 
 ### Outputs
 The output of this code will be:  

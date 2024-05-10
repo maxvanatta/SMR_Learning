@@ -536,7 +536,7 @@ class EconomicAssessment_OneGen:
         print('Solving...')
         #print(sorted(pyomo.IOptSolver._factory_cls.keys()))
         opt = pyomo.opt.SolverFactory(solver,tee = True)
-        opt.options.mipgap = 0.1
+        opt.options.mipgap = 0.025
         opt.options['timelimit'] = 2000
 
         #results = opt.solve(self.model, tee = False, logfile='CPLEX_LC_V1_test.log')
